@@ -9,7 +9,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab idkffff
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallelgurll
+# A workflow run is made up of one or more jobs that can run sequentially or in parallelgurllssss
 jobs:
   # This workflow contains a single job called "build"dfsfsfd
   build:
