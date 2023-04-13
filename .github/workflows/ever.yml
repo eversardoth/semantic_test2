@@ -27,6 +27,6 @@ jobs:
       - name: Change file
         run: |
           git checkout master
-          git merge --no-ff ${{github.head_ref}}
+          git merge --no-ff origin/${{github.head_ref}}
           npm install -g semantic-release
           npx semantic-release --no-ci --branches master
