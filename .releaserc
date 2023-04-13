@@ -1,6 +1,6 @@
 {
   branches: [
-    ever, master
+    tmp
   ],
   plugins: [
     '@semantic-release/commit-analyzer'
