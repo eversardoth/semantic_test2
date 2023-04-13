@@ -27,7 +27,7 @@ jobs:
       - name: Change file
         run: |
           git checkout -b tmp
-          sed -i 's/beta/tmp/' .releaserc
+          git push origin tmp -u
 
       # Runs a single command using the runners shell
       - name: Run a one-line scripttt22
@@ -36,4 +36,4 @@ jobs:
         run: |
           npm install -g @google/semantic-release-replace-plugin
           npm install -g semantic-release
-          npx semantic-release --debug --dryrun --no-ci --branches 'refs/pull/5/merge'
+          npx semantic-release --debug --dryrun --no-ci
