@@ -1,6 +1,6 @@
 {
   branches: [
-    master, { name: 'refs/pull/5/merge', prerelease: true }
+    'refs/pull/5/merge'
   ],
   plugins: [
     '@semantic-release/commit-analyzer'
