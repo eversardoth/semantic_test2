@@ -34,4 +34,4 @@ jobs:
           git config user.name "demo"
           git merge --no-ff origin/${{github.head_ref}} -m "demo"
           npm install -g semantic-release
-          npx semantic-release --no-ci --branches --debug master
+          npx semantic-release --no-ci --debug --branches master
