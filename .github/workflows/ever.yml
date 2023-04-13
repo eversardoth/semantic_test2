@@ -47,6 +47,7 @@ jobs:
       - name: Run a one-line scripttt22
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_LOCAL_BRANCH: 'master'
         run: |
           git checkout master
           git config user.email "demo@everr.com"
