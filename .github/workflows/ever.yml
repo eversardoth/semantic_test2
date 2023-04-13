@@ -36,4 +36,4 @@ jobs:
         run: |
           npm install -g @google/semantic-release-replace-plugin
           npm install -g semantic-release
-          npx semantic-release --debug --dryrun
+          npx semantic-release --debug --dryrun --no-ci
