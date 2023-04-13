@@ -26,8 +26,9 @@ jobs:
           fetch-depth: 0
       - name: Change file
         run: |
+          git branch
           git checkout -b tmp
-          git push origin tmp -u
+          git branch
 
       # Runs a single command using the runners shell
       - name: Run a one-line scripttt22
