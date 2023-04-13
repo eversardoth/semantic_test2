@@ -29,7 +29,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm install -g @google/semantic-release-replace-plugin
-          npm install -g @semantic-release/git
+          git checkout master
+          git config user.email "demo@everr.com"
+          git config user.name "demo"
+          git merge --no-ff origin/${{github.head_ref}} -m "demo"
           npm install -g semantic-release
-          npx semantic-release --debug
+          npx semantic-release --no-ci --branches master
