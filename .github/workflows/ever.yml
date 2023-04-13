@@ -27,6 +27,7 @@ jobs:
       - name: Change file
         run: |
           git checkout master
-          git merge --no-ff origin/${{github.head_ref}}
+          git config user.email "demo@everr.com"
+          git merge --no-ff origin/${{github.head_ref}} -m "demo"
           npm install -g semantic-release
           npx semantic-release --no-ci --branches master
