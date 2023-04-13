@@ -1,6 +1,5 @@
 {
   branches: [
-    'master',
     { name: 'refs/pull/5/merge', prerelease: true }
   ],
   plugins: [
