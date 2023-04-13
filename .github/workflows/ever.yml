@@ -29,12 +29,3 @@ jobs:
           git branch
           git checkout -b tmp
           git branch
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line scripttt22
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npm install -g @google/semantic-release-replace-plugin
-          npm install -g semantic-release
-          npx semantic-release --debug --dryrun --no-ci
